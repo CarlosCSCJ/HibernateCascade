@@ -10,11 +10,13 @@ import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name="armas")
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Arma {
 	
 	@Id

@@ -30,7 +30,7 @@ public class Personaje implements Serializable {
 	private String nombre;
 
 
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="id_alarma")
 	private Arma arma;
 }
